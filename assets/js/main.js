@@ -26,6 +26,7 @@
 				$body.removeClass('is-preload');
 			}, 100);
 		});
+		$('#cropcircle').attr('href','http://www.google.com');
 
 	// Menu.
 		$('#menu')

@@ -2095,12 +2095,18 @@ img {
       margin-bottom: 0; }
   #banner h1 {
     font-size: 7rem;
+    line-height: 6rem;
+
     margin-bottom: 0rem; }
   #banner h6 {
     font-size: 13rem;
-    margin-top: -6rem;
+    line-height:11rem;
+    /*margin-top1 -6rem;*/
+    /*padding-top:-6rem;*/
     margin-bottom: 0rem; 
-    padding: 0rem;}
+    padding-top: 0rem;
+    padding-bottom: 3rem;
+    }
   #banner p {
     font-size: 3.5rem; }
   #banner a {
@@ -2204,7 +2210,9 @@ img {
   /*background-image: linear-gradient(rgba(0, 0, 0, 0.25), rgba(255, 255, 255, 0.25)), url(../../images/backimage2.jpg);*/
   opacity: 1;
   /*height: 60rem;*/
+  /*background: linear-gradient(180deg, #5a5a5a 0%, #111111 100%);*/
   background: linear-gradient(180deg, #111111 0%, #5a5a5a 100%);
+
   /*background: linear-gradient(135deg, #000000 0%, #777777 74%);*/
 
   font-family: "ApacheFont", sans-serif;
@@ -2705,7 +2713,7 @@ img {
       width: 25%; }
       #footer .content section:first-child {
         width: 50%;
-        padding-right: 4rem; }
+        padding-right: 2rem; }
       #footer .content section:last-child {
         padding-left: 4rem; }
   #footer .copyright {

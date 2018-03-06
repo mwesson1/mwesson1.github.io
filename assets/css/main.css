@@ -2429,7 +2429,10 @@ img {
     text-align: left;
     /*opacity: 0.3;*/
     /*margin-left: -8rem;*/
-    margin-left: 1rem;
+    /*margin-left: 3rem;*/
+    font-size: 4rem;
+    margin-bottom: 0rem;
+    line-height: 3.7rem;
 
 
     /*text-shadow: 0px 0px 2px #111111;*/
@@ -3123,7 +3126,7 @@ body {
   right: 0;
   top: 0;
   visibility: hidden;
-  width: 20rem;
+  width: 25rem;
   z-index: 10002; }
   #menu input, #menu select, #menu textarea {
     color: #ffffff; }

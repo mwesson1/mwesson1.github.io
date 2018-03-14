@@ -49,14 +49,76 @@
 				<div class="inner">
 					<div class="content">
 						<header>
-							<h2>Register Today</h2>
+							<h2>Elite Speed & Technical Camp Registration Form</h2>
 						</header>
-						<p>
-							<a href="summerregistration.html" style="font-size: 2rem">Summer Soccer Camp</a>
-						</p>
-						<p>
-							<a href="eliteregistration.html" style="font-size: 2rem">Elite Speed & Technical Camp</a>
-						</p>
+						<form name="submit-to-a-sheet" method="post" action="index.html">
+						
+							<div class="col-6 col-12-medium">
+
+						<label for="fname">F. Name</label>
+					</div>
+							<div class="col-6 col-12-medium">
+
+					<input name="fname" type="text" placeholder="First Name" required></div>
+					&ensp;
+						<label>L. Name</label>
+
+  						<input name="lname" type="text" placeholder="Last Name" required>&ensp;
+						<label>Parent Name</label>
+  						
+  						<input name="parent_name" type="text" placeholder="Parent Name" required>&ensp;
+
+						<label>Parent Email</label>
+  						<input name="parent_email" type="email" placeholder="Parent Email" required>&ensp;
+
+						<label>Emergency Contact</label>
+  						<input name="e_contact" type="text" placeholder="Emergency Contact" required>&ensp;
+						<label>Allergies</label>
+  						
+  						<input name="allergies" type="text" placeholder="Allergies" required>&ensp;
+  						
+  						<label>Age</label>
+  						<select name="age" placeholder = "Age">
+						  <option value="-">-</option>
+
+						  <option value="13">13</option>
+						  <option value="14">14</option>
+						  <option value="15">15</option>
+						  <option value="16">16</option>
+						  <option value="17">17</option>
+						  <option value="18">18</option>
+						  <option value="18+">18+</option>
+						  
+						</select>&ensp;
+						<label>Position</label>
+
+						<select name="position" placeholder = "Position">
+						  <option value="-">-</option>
+
+						  <option value="GK">GK</option>
+						  <option value="D">D</option>
+						  <option value="M">M</option>
+						  <option value="F">F</option>
+						</select>&ensp;
+
+
+
+
+
+
+
+
+  						<!-- <input name="firstName" type="text" placeholder="First Name"> -->
+
+  						<!-- <input name="lastName" type="text" placeholder="Last Name"> -->
+  						
+						<!-- <button type="submit" style="margin-top:2rem" onclick="">Submit</button> -->
+						<button type="submit" style="margin-top:2rem" onclick="location.href = 'thanks.html'">Submit</button>
+
+			
+						<!-- <input type="submit" value="google go"> -->
+
+						</form>
 
 					</div>
 				</div>
@@ -100,8 +162,8 @@
 			<script src="assets/js/jquery.serialize-object.js"></script>
 			<script type="text/javascript" src="https://cdn.ywxi.net/js/1.js" async></script>
 			<script>
-			  const scriptURL = 'https://script.google.com/macros/s/AKfycbxzOxjOYsEABJmZ2ttQYS9b5trdyNEGOdIdTPkPa_u3BX2HXag/exec'
-			  const form = document.forms['submit-to-google-sheet']
+			  const scriptURL = 'https://script.google.com/macros/s/AKfycbwmL-7okTBa-RaZfDWubF5oCbJGQNw6fA2QekryQ63Ck4otMGST/exec'
+			  const form = document.forms['submit-to-a-sheet']
 
 			  form.addEventListener('submit', e => {
 			    e.preventDefault()

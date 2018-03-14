@@ -3295,6 +3295,9 @@ body {
 
   .textcontainer {
     /*padding:0;*/
+    /*width: 100%;
+    position:absolute;
+    left: 50%;*/
     background: #ffffff;
     box-shadow: 3px 3px 3px #000000;
     border-radius: .5rem;

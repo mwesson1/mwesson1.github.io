@@ -1,15 +1,17 @@
 <!DOCTYPE HTML>
-
+<!--
+	Industrious by TEMPLATED
+	templated.co @templatedco
+	Released for free under the Creative Commons Attribution 3.0 license (templated.co/license)
+-->
 <html>
 	<head>
-		<title>Contact</title>
+		<title>Registration</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<meta name="description" content="" />
 		<meta name="keywords" content="" />
 		<link rel="stylesheet" href="assets/css/main.css" />
-		<link rel="icon" href="images/38_icon.png" sizes="16x16">
-		
 	</head>
 	<body class="is-preload">
 
@@ -20,17 +22,14 @@
 					<a href="#menu">Menu</a>
 				</nav>
 			</header>
-
 		<!-- Nav -->
 			<nav id="menu">
 				<ul class="links">
 					<li><a href="index.html">Home</a></li>
 					<li><a href="biography.html">Biography</a></li>
 					<li><a href="summercamp.html">Summer Soccer Camp</a></li>
-					<li><a href="elitecamp.html">Elite Camp</a></li>
-					<li><a href="contactus.html">Contact Us</a></li>
-					<li><a href="registration.html">Registration</a></li>
-
+					<li><a href="#">Elite Camp</a></li>
+					<li><a href="#">Contact Us</a></li>
 				</ul>
 			</nav>
 
@@ -43,20 +42,20 @@
 			</div>
 
 		<!-- Main -->
+
 			<section id="main" class="wrapper">
 				<div class="inner">
-					<div class="content" style="font-size: 1.25rem">
+					<div class="content">
 						<header>
-							<h2>Contact Us</h2>
+							<h2>Register Today</h2>
 						</header>
-						
-						<h3>Phone: 630-220-3838</h3>
-						<!-- <a href="mailto:socceracademy38@gmail.com"> Email: socceracademy38@gmail.com</a> -->
-						<h3> Email: socceracademy38@gmail.com</h3>
+						<p>
+							<a href="summerregistration.html" style="font-size: 2rem">Summer Soccer Camp</a>
+						</p>
+						<p>
+							<a href="eliteregistration.html" style="font-size: 2rem">Elite Speed & Technical Camp</a>
+						</p>
 
-						<p> Contact Sitch regarding more information about individual trainings, group trainings, our Summer Soccer Camp, or our Elite Speed and Training Camp.</p>
-						
-				
 					</div>
 				</div>
 			</section>
@@ -68,6 +67,7 @@
 						<section>
 							<h4>Contact Us</h4>
 							<a href="mailto:socceracademy38@gmail.com"> Email: socceracademy38@gmail.com</a>
+							<!-- <pre></pre> -->
 							<p>Phone: 630-220-3838</p>
 						</section>
 
@@ -75,7 +75,7 @@
 							<h4>Find us on social media</h4>
 							<ul class="plain">
 								<li><a href="https://www.facebook.com/ACADEMY38SITCH38/" target="_blank"><img src="images/facebook_icon_invert.png" style="height:1.25rem">&nbsp;&nbsp;&nbsp;</img>Facebook</a></li>
-								<li><a href="https://www.instagram.com/sitch38/" target="_blank"><img src="images/insta_icon_invert.png" style="height:1.25rem">&nbsp;&nbsp;&nbsp;</img>Instagram</a></li>
+								<li><a href="https://www.instagram.com/sitch38/"><img src="images/insta_icon_invert.png" style="height:1.25rem">&nbsp;&nbsp;&nbsp;</img>Instagram</a></li>
 							</ul>
 						</section>
 					</div>
@@ -85,13 +85,29 @@
 				</div>
 			</footer>
 
+
 		<!-- Scripts -->
+		<script src="https://wzrd.in/standalone/formdata-polyfill"></script>
+		<script src="https://wzrd.in/standalone/promise-polyfill@latest"></script>
+		<script src="https://wzrd.in/standalone/whatwg-fetch@latest"></script>
 			<script src="assets/js/jquery.min.js"></script>
 			<script src="assets/js/browser.min.js"></script>
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
+			<script src="assets/js/jquery.serialize-object.js"></script>
 			<script type="text/javascript" src="https://cdn.ywxi.net/js/1.js" async></script>
+			<script>
+			  const scriptURL = 'https://script.google.com/macros/s/AKfycbxzOxjOYsEABJmZ2ttQYS9b5trdyNEGOdIdTPkPa_u3BX2HXag/exec'
+			  const form = document.forms['submit-to-google-sheet']
 
+			  form.addEventListener('submit', e => {
+			    e.preventDefault()
+			    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+			      .then(response => console.log('Success!', response))
+			      .catch(error => console.error('Error!', error.message))
+			      form.reset()
+			  })
+			</script>
 	</body>
 </html>

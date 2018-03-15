@@ -1919,8 +1919,18 @@ img {
   /*background-image: url("../../images/front.jpg");*/
   background-image: url("../../images/front_38_bad.jpg");
 
-
-
+  /*background: linear-gradient(135deg, #111111 0%, #ffffff 100%);*/
+/*    content: ' ';
+    display: block;
+    height: 100%;
+    left: 0;*/
+    /*opacity: 0.6;*/
+/*    position: absolute;
+    top: 0;*/
+  /*webkit-linear-gradientidth: 100%;*/
+/*    width: 100%;
+    z-index: 1; 
+*/
 
   /*background-image: url("../../images/red_stars_14crop.jpg");*/
 
@@ -2134,14 +2144,22 @@ img {
     right: 50%;
     width: auto; }
   #banner:before {
-    -moz-transition: opacity 3s ease;
+/*    -moz-transition: opacity 3s ease;
     -webkit-transition: opacity 3s ease;
     -ms-transition: opacity 3s ease;
     transition: opacity 3s ease;
     -moz-transition-delay: 1.25s;
     -webkit-transition-delay: 1.25s;
     -ms-transition-delay: 1.25s;
-    transition-delay: 1.25s;
+    transition-delay: 1.25s;*/
+    -moz-transition: opacity 0s ease;
+    -webkit-transition: opacity 0s ease;
+    -ms-transition: opacity 0s ease;
+    transition: opacity 0s ease;
+    -moz-transition-delay: 0s;
+    -webkit-transition-delay: 0s;
+    -ms-transition-delay: 0s;
+    transition-delay: 0s;
     background: #111111;
     content: '';
     display: block;

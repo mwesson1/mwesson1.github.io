@@ -2131,10 +2131,11 @@ img {
     #banner a:hover {
       color: #ffffff; }
   #banner video {
-    -moz-transform: translateX(50%) translateY(50%);
-    -webkit-transform: translateX(50%) translateY(50%);
-    -ms-transform: translateX(50%) translateY(50%);
-    transform: translateX(50%) translateY(50%);
+    display: none;
+    /*-moz-transform: translateX(50%) translateY(50%);*/
+    /*-webkit-transform: translateX(50%) translateY(50%);*/
+    /*-ms-transform: translateX(50%) translateY(50%);*/
+    /*transform: translateX(50%) translateY(50%);*/
     bottom: 50%;
     height: auto;
     min-height: 100%;
@@ -2152,14 +2153,14 @@ img {
     -webkit-transition-delay: 1.25s;
     -ms-transition-delay: 1.25s;
     transition-delay: 1.25s;*/
-    -moz-transition: opacity 0s ease;
+/*    -moz-transition: opacity 0s ease;
     -webkit-transition: opacity 0s ease;
     -ms-transition: opacity 0s ease;
     transition: opacity 0s ease;
     -moz-transition-delay: 0s;
     -webkit-transition-delay: 0s;
     -ms-transition-delay: 0s;
-    transition-delay: 0s;
+    transition-delay: 0s;*/
     background: #111111;
     content: '';
     display: block;
@@ -2200,7 +2201,7 @@ img {
         margin-bottom: 0.0rem;
         padding-bottom: 0; }
       #banner h6 {
-        /*height: 2rem;*/
+        height: 2rem;
         font-size: 1.75rem;
         margin-bottom: 0.5rem;
         padding-bottom: 0; }
@@ -2222,7 +2223,7 @@ img {
   body.is-preload #banner:before {
     opacity: 1; }
 
-/* CTA */
+/* CTA 
 #cta {
   background-color: #333333;
   color: rgba(255, 255, 255, 0.75);

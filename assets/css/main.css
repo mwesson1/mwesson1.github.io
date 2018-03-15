@@ -2144,7 +2144,7 @@ img {
     position: absolute;
     right: 50%;
     width: auto; }
-  #banner:before {
+  /*#banner:before {*/
 /*    -moz-transition: opacity 3s ease;
     -webkit-transition: opacity 3s ease;
     -ms-transition: opacity 3s ease;
@@ -2161,7 +2161,7 @@ img {
     -webkit-transition-delay: 0s;
     -ms-transition-delay: 0s;
     transition-delay: 0s;*/
-    background: #111111;
+/*    background: #111111;
     content: '';
     display: block;
     height: 100%;
@@ -2170,7 +2170,7 @@ img {
     position: absolute;
     top: 0;
     width: 100%;
-    z-index: 1; }
+    z-index: 1; }*/
   #banner:after {
     background: linear-gradient(135deg, #111111 0%, #ffffff 100%);
     content: ' ';
@@ -2214,21 +2214,21 @@ img {
   @media screen and (max-width: 480px) {
     #banner p {
       font-size: 1rem; } }
-  body.is-preload #banner .inner {
+/*  body.is-preload #banner .inner {
     -moz-transform: scale(0.99);
     -webkit-transform: scale(0.99);
     -ms-transform: scale(0.99);
     transform: scale(0.99);
-    opacity: 0; }
+    opacity: 0; }*/
   body.is-preload #banner:before {
     opacity: 1; }
 
-/* CTA 
+ /*CTA */
 #cta {
   background-color: #333333;
   color: rgba(255, 255, 255, 0.75);
 
-  /*color: rgba(50, 20, 255, 0.75);*/
+  /*color: rgba(50, 20, 255, 0.75);
   /*background-image: url("");*/
   background-attachment: fixed;
   /*background-image: linear-gradient(rgba(26, 62, 206, 0.25), rgba(26, 62, 206, 0.25)), url(../../images/spintronicsi.jpg);*/
